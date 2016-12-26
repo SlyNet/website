@@ -55,7 +55,10 @@ When you use the mark and sweep collector, Mono can distribute the mark phase ac
 
 To enable the multi-processor garbage collection, set the `major` variable to `marksweep-par` or `marksweep-par-fixed`
 
-When using the mark and sweep collector, you can also instruct SGen to perform a parallel sweep. When this is enabled a parallel thread runs side-by-side with your application performing sweeps in the background. To enable this feature set the `concurrent-sweep` flag. Fixed vs Variable Major Heaps
+When using the mark and sweep collector, you can also instruct SGen to perform a parallel sweep. When this is enabled a parallel thread runs side-by-side with your application performing sweeps in the background. To enable this feature set the `concurrent-sweep` flag.
+
+Fixed vs Variable Major Heaps
+=============================================
 
 Unlike some other virtual machines, the major heap in Mono does not have to be fixed. Mono can grow its major heap on demand to satisfy the memory usage requirements of the application.
 
